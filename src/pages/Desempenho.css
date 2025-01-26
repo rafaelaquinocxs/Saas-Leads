@@ -1,0 +1,71 @@
+/* src/pages/Desempenho/Desempenho.css */
+
+.desempenho-page {
+    margin-top: 70px;
+    padding: 30px;
+  }
+  
+  .content-container {
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-dark);
+    padding: 30px;
+  }
+  
+  .desempenho-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .metrics-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .metric {
+    background-color: #333;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  }
+  
+  .metric:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  .metric h4 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .metric-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+  
+  .chart-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+  }
+  
+  .chart-header h4 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
