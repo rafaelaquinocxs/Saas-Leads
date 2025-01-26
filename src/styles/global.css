@@ -1,0 +1,294 @@
+/* Estilos Globais e Variáveis */
+:root {
+    --primary-bg: #101820; /* Fundo escuro */
+    --secondary-bg: #181818; /* Fundo secundário */
+    --highlight-color: #00b3b3; /* Cor de destaque */
+    --accent-color: #FF4F5A; /* Cor de chamada para ação */
+    --text-color: #f5f5f5; /* Texto principal */
+    --muted-text: #a9a9a9; /* Texto secundário */
+    --border-radius: 10px; /* Bordas arredondadas */
+    --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    --shadow-dark: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
+    --transition-duration: 0.3s;
+    --font-family: 'Roboto', sans-serif;
+    --primary-font-size: 1rem;
+    --large-font-size: 1.25rem;
+    --header-font-size: 2rem;
+  }
+  
+  /* Reset de estilos padrão */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: var(--highlight-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Barra de navegação superior */
+  .navbar {
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .navbar h2 {
+    color: var(--highlight-color);
+    font-size: var(--header-font-size);
+    font-weight: 700;
+  }
+  
+  .navbar a {
+    color: var(--text-color);
+    font-size: var(--primary-font-size);
+    margin-left: 25px;
+  }
+  
+  .navbar a:hover {
+    color: var(--highlight-color);
+  }
+  
+  /* Container Principal */
+  .container {
+    margin-top: 80px; /* espaço para a navbar fixa */
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Cards de Informações (Exemplo: Métricas) */
+  .card {
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow-light);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .card h3 {
+    font-size: var(--large-font-size);
+    color: var(--text-color);
+  }
+  
+  .card p {
+    font-size: var(--primary-font-size);
+    color: var(--muted-text);
+  }
+  
+  /* Títulos Secundários */
+  .sub-header {
+    font-size: var(--large-font-size);
+    color: var(--highlight-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Seções */
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Tabelas (como gráfico de Gantt ou dados) */
+  .table {
+    width: 100%;
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+  }
+  
+  .table thead {
+    background-color: var(--highlight-color);
+  }
+  
+  .table th, .table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .table th {
+    color: var(--text-color);
+  }
+  
+  .table td {
+    color: var(--muted-text);
+  }
+  
+  /* Botões */
+  button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-duration) ease;
+  }
+  
+  button:hover {
+    background-color: #ff2b35;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  /* Dropdowns e Inputs */
+  .select, .input {
+    background-color: var(--secondary-bg);
+    border: 1px solid #444;
+    color: var(--text-color);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    font-size: var(--primary-font-size);
+    width: 100%;
+  }
+  
+  .select:focus, .input:focus {
+    border-color: var(--highlight-color);
+    outline: none;
+  }
+  
+  .select option {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  /* Cards interativos */
+  .interactive-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow-light);
+    transition: all var(--transition-duration);
+  }
+  
+  .interactive-card:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .interactive-card .icon {
+    font-size: 30px;
+    color: var(--highlight-color);
+  }
+  
+  .interactive-card .text {
+    font-size: var(--primary-font-size);
+    color: var(--text-color);
+  }
+  
+  .interactive-card .action-btn {
+    background-color: var(--accent-color);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color var(--transition-duration);
+  }
+  
+  .interactive-card .action-btn:hover {
+    background-color: #FF3B4C;
+  }
+  
+  /* Cards de Estatísticas */
+  .stat-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow-light);
+    transition: all var(--transition-duration);
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .stat-card .icon {
+    font-size: 40px;
+    color: var(--highlight-color);
+  }
+  
+  .stat-card .value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .stat-card .label {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+  }
+  
+  /* Layout Responsivo */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .container {
+      margin-top: 120px; /* espaço para navbar */
+    }
+  
+    .section {
+      gap: 15px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .table th, .table td {
+      padding: 10px;
+    }
+  
+    .stat-card .value {
+      font-size: 2rem;
+    }
+  }
+  

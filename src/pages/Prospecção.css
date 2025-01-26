@@ -1,0 +1,133 @@
+.prospection-container {
+    display: flex;
+    height: 100vh; /* Faz com que o container ocupe toda a altura da tela */
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Torna a sidebar fixa */
+    height: 100vh; /* Faz a sidebar ocupar toda a altura */
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #4CAF50; /* Altera a cor do link quando o usuário passa o mouse */
+  }
+  
+  .main-content {
+    margin-left: 270px; /* Garante que o conteúdo principal fique ao lado da sidebar */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto; /* Permite o scroll quando o conteúdo for grande */
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .input-field, .persona-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .file-upload {
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .persona-creation input {
+    padding: 10px;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .persona-list {
+    margin-top: 10px;
+  }
+  
+  .persona-item {
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .cadence-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cadence-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cadence-list {
+    margin-top: 10px;
+  }
+  
+  .cadence-item {
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  

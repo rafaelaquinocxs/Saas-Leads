@@ -1,0 +1,22 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    background-color: #2f2f2f;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 200px;
+    }
+  }
+
+  
